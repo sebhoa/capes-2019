@@ -436,9 +436,9 @@ ligne | a | b | c | d |
  9    | M | M | V | V |
  
  
- #### Question 18
+#### Question 18
  
- Une variable vivante en ligne 0 signifie qu'elle est utilisée sans avoir été initialisée. Non le programme ne serait pas exécutable.
+Une variable vivante en ligne 0 signifie qu'elle est utilisée sans avoir été initialisée. Non le programme ne serait pas exécutable.
  
 #### Question 19
 
@@ -621,8 +621,3 @@ coloriage(G_EX)
     [0, 0, 2, 1, 1, 0]
 
 
-
-
-```python
-
-```
