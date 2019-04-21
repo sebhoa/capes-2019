@@ -37,7 +37,7 @@ Le sujet est ici : [EP1_Info_2019.pdf][1]
 
 #### Question 3
 
-On modéliser par la liste `[a_p-1, ... a_1, a_0]` le nombre `(a_0a_1...a_p-1)_e`. Définir `valeur(L)`
+On modélise par la liste [a<sub>p-1</sub>, ... a<sub>1</sub>, a<sub>0</sub>] le nombre (a<sub>0</sub>a<sub>1</sub>...a<sub>p-1</sub>)<sub>e</sub>. Définir `valeur(L)`
 
 
 [1]:http://www4.ac-nancy-metz.fr/capesmath/data/uploads/EP1_info_2019.pdf
@@ -66,14 +66,14 @@ valeur([1, 0, -1, -1, 1])
 
 ##### 4a
 
-On suppose qu'un entier n est tel que : n = 3q + r et q s'écrit `(a_0...a_p-1)_e`. Dès lors n s'écrit : 
+On suppose qu'un entier n est tel que : n = 3q + r et q s'écrit (a<sub>0</sub>...a<sub>p-1</sub>)<sub>e</sub>. Dès lors n s'écrit : 
 
-- r = 0 : `(a_0...a_p-10)_e`
-- r = 1 : `(a_0...a_p-11)_e`
+- r = 0 : (a<sub>0</sub>...a<sub>p-1</sub>0)<sub>e</sub>
+- r = 1 : (a<sub>0</sub>...a<sub>p-1</sub>1)<sub>e</sub>
 
 ##### 4b
 
-On suppose que q > 0 et q + 1 s'écrit `(b_0...b_p-1)_e`. Dès lors si r = 2, n = 3(q + 1) + 2 - 3 = 3(q + 1) - 1 et donc s'écrit `(b_0...b_p-1(-1))_e`
+On suppose que q > 0 et q + 1 s'écrit (b<sub>0</sub>...b<sub>p-1</sub>)<sub>e</sub>. Dès lors si r = 2, n = 3(q + 1) + 2 - 3 = 3(q + 1) - 1 et donc s'écrit (b<sub>0</sub>...b<sub>p-1</sub>(-1))<sub>e</sub>
 
 ##### 4c
 
@@ -104,7 +104,7 @@ def incrementeR(L):
         return [-1] + incrementeR(L[1:])
 ```
 
-Explication de la ligne 9 : On est dans le cas où n = n' + 1 (`L[0] vaut 1`) représenté par `L` alors `L[1:]` est un décalage à gauche de n' et donc représente n'/3. L'appel récursif représente donc n'/3 + 1 et en redécalant à droite on a 3*(n'/3 + 1) soit n' + 3 et en ajoutant -1 on obtient n' + 2 soit n + 1.
+Explication de la ligne 9 : On est dans le cas où n = n' + 1 (`L[0] vaut 1`) représenté par `L` alors `L[1:]` est un décalage à gauche de n' et donc représente n'/3. L'appel récursif représente donc n'/3 + 1 et en redécalant à droite on a 3(n'/3 + 1) soit n' + 3 et en ajoutant -1 on obtient n' + 2 soit n + 1.
 
 Les lignes 1 et 2 (de l'énoncé, 2 et 3 dans ce notebook) sont là pour le cas terminal : à chaque appel récursif, la longueur de L diminue strictement de 1. En partant d'une liste non vide on finira par tomber sur le cas `len(L) == 0`. 
 
@@ -164,11 +164,11 @@ Montrer l'unicité.
 
 ##### 6a
 
-Si C s'écrit `(a0...ap-1)_e` avec `a0 == 1` alors `C % 3` vaut 1.
+Si C s'écrit (a<sub>0</sub>...a<sub>p-1</sub>)<sub>e</sub> avec a<sub>0</sub> égal à 1 alors `C % 3` vaut 1.
 
 ##### 6b
 
-De même si C = 3q alors a0 vaut 0 et si C = 3q + 2 alors a0 vaut -1. Ceci suffit à prouver l'unicité de l'écriture.
+De même si C = 3q alors a<sub>0</sub> vaut 0 et si C = 3q + 2 alors a<sub>0</sub> vaut -1. Ceci suffit à prouver l'unicité de l'écriture.
 
 #### Question 7
 
@@ -234,12 +234,12 @@ print(arrivee(107))
 
 ##### 9a
 
-Le min de N(a, a) pour a consiste à avoir le chemin le plus court jusqu'à A(a, a). Donc `(10...0)_e` Avec a zéros. Ce qui nous donne l'entier `3^a`
-Pour le max on va maximiser les puissances de 3... donc `(11...1-1...-1)_e` (il y a `a` digit `1` et `a` digit `-1` pour un entier égal à `3^(2a) + 3^(2a-1) + ... + 3^a - 3^(a-1) - ... - 3 - 1` 
+Le min de N(a, a) pour a consiste à avoir le chemin le plus court jusqu'à A(a, a). Donc (10...0)<sub>e</sub> Avec a zéros. Ce qui nous donne l'entier 3<sup>a</sup>
+Pour le max on va maximiser les puissances de 3... donc (11...1-1...-1)<sub>e</sub> (il y a a digits `1` et a digits `-1` pour un entier égal à 3<sup>2a</sup> + 3<sup>2a-1</sup> + ... + 3<sup>a</sup> - 3<sup>a-1</sup> - ... - 3 - 1 
 
 ##### 9b
 
-Pour le max N(a, b) avec a < b, ça ne change pas : `(11...1-1...-1)_e` avec `a` digits `1` et b digits `-1` pour le minimun : min N(a, b) = `(10...0-1...-1)_e` avec `a` digits `0` et b digits `-1` 
+Pour le max N(a, b) avec a < b, le raisonnement est analogue : (11...1-1...-1)<sub>e</sub> avec a digits `1` et b digits `-1` pour le minimun : min N(a, b) = (10...0-1...-1)<sub>e</sub> avec a digits `0` et b - a digits `-1` 
 
 
 
