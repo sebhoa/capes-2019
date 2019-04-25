@@ -171,3 +171,73 @@
 [NotebookApp | INFO] Saving file at /capes_option_info.ipynb
 [NotebookApp | INFO] Saving file at /capes_option_info.ipynb
 [NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Starting buffering for 040c9d3a-01b2-42cd-a071-d765f9b6c8b3:35b796a49d6f4ca29a7895e0e09547ce
+[NotebookApp | INFO] Kernel shutdown: 040c9d3a-01b2-42cd-a071-d765f9b6c8b3
+[NotebookApp | INFO] Shutting down on /api/shutdown request.
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/sebastien/Documents/15_Git/capes-2019
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8889/?token=d353d6c4dc9593500f85d9c5b1ea3ba90c9fc5a5d18984b8
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/sebastien/Library/Jupyter/runtime/nbserver-30146-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=d353d6c4dc9593500f85d9c5b1ea3ba90c9fc5a5d18984b8
+[NotebookApp | INFO] Kernel started: 562153e5-194b-4026-8e90-ade6f8faa463
+[NotebookApp | INFO] 302 GET /notebooks/ressources/delannoy2019.jpg (::1) 1.37ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 562153e5-194b-4026-8e90-ade6f8faa463
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Starting buffering for 562153e5-194b-4026-8e90-ade6f8faa463:d54ee5fde25a4ee8a2088e7e7e29d3f9
+[NotebookApp | INFO] Kernel shutdown: 562153e5-194b-4026-8e90-ade6f8faa463
+[NotebookApp | INFO] Shutting down on /api/shutdown request.
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/sebastien/Documents/15_Git/capes-2019
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8891/?token=4e7a04445dd2e81ce63d03c64a29632899a3fcd7d8bac1ad
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/sebastien/Library/Jupyter/runtime/nbserver-41533-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8891/?token=4e7a04445dd2e81ce63d03c64a29632899a3fcd7d8bac1ad
+[NotebookApp | INFO] Kernel started: 0567befa-1c6e-4a5b-8169-bbc13d186a13
+[NotebookApp | INFO] 302 GET /notebooks/ressources/delannoy2019.jpg (::1) 1.43ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 0567befa-1c6e-4a5b-8169-bbc13d186a13
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Starting buffering for 0567befa-1c6e-4a5b-8169-bbc13d186a13:4caf86dd79664b7d8556ff07cd235b91
+[NotebookApp | INFO] Kernel shutdown: 0567befa-1c6e-4a5b-8169-bbc13d186a13
+[NotebookApp | INFO] interrupted
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/sebastien/Documents/15_Git/capes-2019
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8892/?token=15cf9289cfb08fff7c77d3d2b521e887667add1fc0ac0c1f
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/sebastien/Library/Jupyter/runtime/nbserver-55800-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8892/?token=15cf9289cfb08fff7c77d3d2b521e887667add1fc0ac0c1f
+[NotebookApp | INFO] Kernel started: 93a6c0db-b5b7-4ffe-9e5b-2d313f5ab4b3
+[NotebookApp | INFO] 302 GET /notebooks/ressources/delannoy2019.jpg (::1) 1.82ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 93a6c0db-b5b7-4ffe-9e5b-2d313f5ab4b3
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb
+[NotebookApp | INFO] Saving file at /capes_option_info.ipynb

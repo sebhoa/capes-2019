@@ -11,9 +11,9 @@ Le sujet est ici : [EP1_Info_2019.pdf][1]
 
 ##### 1a
 
-- 1(-1)0(-1)<sub>e</sub> = 1 * 3<sup>3</sup> + -1 * 3<sup>2</sup> + 0 * 3 - 1 = 17
-- 1111<sub>e</sub> = 1 * 3<sup>3</sup> + 1 * 3<sup>2</sup> + 1 * 3 + 1 = 40
-- 1(-1)(-1)(-1)(-1)<sub>e</sub> = 3<sup>4</sup> - 3<sup>3</sup> - 3<sup>2</sup> - 3 - 1 = 41
+- $\overline{1(-1)0(-1)}^e = 1 \times 3^3 + -1 \times 3^2 + 0 \times 3 - 1 = 17$
+- $\overline{1111}^e = 3^3 + 3^2 + 3 + 1 = 40$
+- $\overline{1(-1)(-1)(-1)(-1)}^e = 3^4 - 3^3 - 3^2 - 3 - 1 = 41$
 
 ##### 1b
 
@@ -32,12 +32,13 @@ Le sujet est ici : [EP1_Info_2019.pdf][1]
 
 #### Question 2
 
-- A<sub>k</sub> = 1 1...1<sub>e</sub> = 3<sup>k</sup> + 3<sup>k-1</sup> + ... + 3 + 1
-- B<sub>k</sub> = 1(-1)...(-1)<sub>e</sub> = 3<sup>k</sup> - 3<sup>k-1</sup> - ... - 3 - 1
+- $A_k = \overline{11...1}^e = 3^k + 3^{k-1} + ... + 3 + 1$
+- $B_k = \overline{1(-1)...(-1)}^e = 3^k - 3^{k-1} - ... - 3 - 1$
+
 
 #### Question 3
 
-On modélise par la liste [a<sub>p-1</sub>, ... a<sub>1</sub>, a<sub>0</sub>] le nombre (a<sub>0</sub>a<sub>1</sub>...a<sub>p-1</sub>)<sub>e</sub>. Définir `valeur(L)`
+On modélise par la liste $[a_{p-1},\ldots a_1, a_0]$ le nombre $\overline{a_0a_1\ldots a_{p-1}}^e$. Définir `valeur(L)`
 
 
 [1]:http://www4.ac-nancy-metz.fr/capesmath/data/uploads/EP1_info_2019.pdf
@@ -66,14 +67,14 @@ valeur([1, 0, -1, -1, 1])
 
 ##### 4a
 
-On suppose qu'un entier n est tel que : n = 3q + r et q s'écrit (a<sub>0</sub>...a<sub>p-1</sub>)<sub>e</sub>. Dès lors n s'écrit : 
+On suppose qu'un entier n est tel que : n = 3q + r et q s'écrit $\overline{a_0\ldots a_{p-1}}^e$. Dès lors n s'écrit : 
 
-- r = 0 : (a<sub>0</sub>...a<sub>p-1</sub>0)<sub>e</sub>
-- r = 1 : (a<sub>0</sub>...a<sub>p-1</sub>1)<sub>e</sub>
+- si r = 0 : $\overline{a_0\ldots a_{p-1}0}^e$
+- si r = 1 : $\overline{a_0\ldots a_{p-1}1}^e$
 
 ##### 4b
 
-On suppose que q > 0 et q + 1 s'écrit (b<sub>0</sub>...b<sub>p-1</sub>)<sub>e</sub>. Dès lors si r = 2, n = 3(q + 1) + 2 - 3 = 3(q + 1) - 1 et donc s'écrit (b<sub>0</sub>...b<sub>p-1</sub>(-1))<sub>e</sub>
+On suppose que q > 0 et q + 1 s'écrit $\overline{b_0\ldots b_{p-1}}^e$. Dès lors si r = 2, n = 3(q + 1) - 1 et donc s'écrit $\overline{b_0\ldots b_{p-1}(-1)}^e$
 
 ##### 4c
 
@@ -164,11 +165,11 @@ Montrer l'unicité.
 
 ##### 6a
 
-Si C s'écrit (a<sub>0</sub>...a<sub>p-1</sub>)<sub>e</sub> avec a<sub>0</sub> égal à 1 alors `C % 3` vaut 1.
+Si C s'écrit $\overline{a_0\ldots a_{p-1}}^e$ avec $a_0$ égal à 1 alors C modulo 3 vaut 1.
 
 ##### 6b
 
-De même si C = 3q alors a<sub>0</sub> vaut 0 et si C = 3q + 2 alors a<sub>0</sub> vaut -1. Ceci suffit à prouver l'unicité de l'écriture.
+De même si C = 3q alors $a_0$ vaut 0 et si C = 3q + 2 alors $a_0$ vaut -1. Ceci suffit à prouver l'unicité de l'écriture.
 
 #### Question 7
 
@@ -193,7 +194,7 @@ def base3e(n):
 
 ##### 8a
 
-Chemin de 2019 : `2019 = (10-110-110)_e`
+Chemin de 2019 : $2019 = \overline{10(-1)10(-1)10}^e$
 
 ![chemin de Delannoy pour 2019](ressources/delannoy2019.jpg)
 
@@ -234,12 +235,12 @@ print(arrivee(107))
 
 ##### 9a
 
-Le min de N(a, a) pour a consiste à avoir le chemin le plus court jusqu'à A(a, a). Donc (10...0)<sub>e</sub> Avec a zéros. Ce qui nous donne l'entier 3<sup>a</sup>
-Pour le max on va maximiser les puissances de 3... donc (11...1-1...-1)<sub>e</sub> (il y a a digits `1` et a digits `-1` pour un entier égal à 3<sup>2a</sup> + 3<sup>2a-1</sup> + ... + 3<sup>a</sup> - 3<sup>a-1</sup> - ... - 3 - 1 
+Le min de N(a, a) pour a consiste à avoir le chemin le plus court jusqu'à A(a, a). Donc $\overline{10...0}^e$. Avec $a$ symboles `0`. Ce qui nous donne l'entier $3^a$.
+Pour le max on va maximiser les puissances de 3... donc $\overline{11\ldots 1(-1)\ldots (-1)}^e$ (il y a $a$ digits `1` et $a$ digits `-1` pour un entier égal à $3^{2a} + 3^{2a-1} + \ldots + 3^a - 3^{a-1} - \ldots - 3 - 1$ 
 
 ##### 9b
 
-Pour le max N(a, b) avec a < b, le raisonnement est analogue : (11...1-1...-1)<sub>e</sub> avec a digits `1` et b digits `-1` pour le minimun : min N(a, b) = (10...0-1...-1)<sub>e</sub> avec a digits `0` et b - a digits `-1` 
+Pour le max N(a, b) avec a < b, le raisonnement est analogue : $\overline{11\ldots 1(-1)\ldots(-1)}^e$ avec $a$ digits `1` et $b$ digits `-1` pour le minimun : min N(a, b) = $\overline{10\ldots 0(-1)\ldots(-1)}^e$ avec $a$ digits `0` et $b - a$ digits `-1`.
 
 
 
@@ -346,7 +347,7 @@ On considère un graphe G de p sommets, p ≤ N.
 
 ##### 14a
 
-Promenade : s0s1...sN... on a donc N+1 sommets supposons que les sommets soient tous différents alors p = N+1 ce qui contredit l'hypothèse.
+Promenade : $s_0s_1\ldots s_N$, on a donc N+1 sommets supposons que les sommets soient tous différents alors p = N+1 ce qui contredit l'hypothèse.
 
 ##### 14b
 
@@ -354,14 +355,16 @@ Encore une fois par l'absurde : si on suppose que le graphe ne possède pas de c
 
 ##### 14c
 
-D'après 14b, soit si0,si1...sik=si0 le cycle. Supposons qu'il existe un ordre topologique N. Alors par définition à la fois de l'ordre et de la promenade, on a : N(si0) < N(si1) < ... < N(sik) = N(si0) ce qui n'est pas possible. Il n'existe donc pas d'ordre topologique sur ce graphe.
+D'après 14b, soit $s_{i0},s_{i1}\ldots s_{ik}=s_{i0}$ le cycle. Supposons qu'il existe un ordre topologique N. Alors par définition à la fois de l'ordre et de la promenade, on a : 
+$$N(s_{i0}) < N(s_{i1}) < \ldots < N(s_{ik}) = N(s_{i0})$$
+ ce qui n'est pas possible. Il n'existe donc pas d'ordre topologique sur ce graphe.
 
 
 #### Question 15
 
-Soit s1 et s2 deux sommets de G. Si s1 et s2 ne sont pas s alors si s1 est successeur de s2 on aura NH(s2) < NH(s1) et donc N(s2) < N(s1) et inversement donc N vérifie bien la condition d'ordre topo.
+Soit s1 et s2 deux sommets de G. Si s1 et s2 ne sont pas s alors si s1 est successeur de s2 on aura $NH(s_2) < NH(s_1)$ et donc $N(s_2) < N(s_1)$ et inversement donc N vérifie bien la condition d'ordre topo.
 
-Si maintenant s2 == s, alors comme s n'a pas de successeur, s2 ne peut pas être le successeur de s. S peut être le successeur de s2. Dès lors, N(s2) = NH(s2) ≤ p - 2 < p - 1 = N(s). La encore la contrainte est vérifiée. N est donc bien un ordre topo sur G.
+Si maintenant s2 == s, alors comme s n'a pas de successeur, s2 ne peut pas être le successeur de s. S peut être le successeur de s2. Dès lors, $N(s_2) = NH(s_2) \leq p - 2 < p - 1 = N(s)$. La encore la contrainte est vérifiée. N est donc bien un ordre topo sur G.
 
 #### Question 16
 
@@ -446,7 +449,7 @@ Une variable vivante en ligne 0 signifie qu'elle est utilisée sans avoir été 
 
 ```python
 """
-PROG_EX:
+PROG^eX:
 0: d=1 
 1: b=2∗d 
 2: a=3 
@@ -459,7 +462,7 @@ PROG_EX:
 9: print(c,d)
 """
 
-PROG_EX = [(3,[]), (1,[3]), (0,[]), (3,[0,1]), (None ,[3]), (2,[0,1]), (None ,[0]), (3,[1,2]), (1,[0]), (None ,[2,3])]
+PROG^eX = [(3,[]), (1,[3]), (0,[]), (3,[0,1]), (None ,[3]), (2,[0,1]), (None ,[0]), (3,[1,2]), (1,[0]), (None ,[2,3])]
 
 def determineVie(prog, p):
     nb_instructions = len(prog)
@@ -493,7 +496,7 @@ ligne | a | b | c | d |
  8    | V | M | V | V |
  9    | M | M | V | V |
  """
-VIE_EX = determineVie(PROG_EX, 4)
+VIE^eX = determineVie(PROG^eX, 4)
 ```
 
 #### Question 20
@@ -522,7 +525,7 @@ def periodesVie(vie, v):
 
 
 ```python
-periodesVie(VIE_EX, 3)
+periodesVie(VIE^eX, 3)
 ```
 
 
@@ -543,8 +546,8 @@ periodesVie(VIE_EX, 3)
 
 ```python
 COLORS = ['bleu', 'rouge', 'vert']
-G_EX = [[], [2, 3, 4], [1, 4, 5], [1], [1, 2, 5], [2, 4]]
-COLOR_EX = [0, 0, 1, 1, 2, 0] 
+G^eX = [[], [2, 3, 4], [1, 4, 5], [1], [1, 2, 5], [2, 4]]
+COLOR^eX = [0, 0, 1, 1, 2, 0] 
 ```
 
 #### Question 22
@@ -566,7 +569,7 @@ def bonnesCouleurs(g, couleurs):
 
 
 ```python
-bonnesCouleurs(G_EX, COLOR_EX)
+bonnesCouleurs(G^eX, COLOR^eX)
 ```
 
 
@@ -612,7 +615,7 @@ def coloriable(voisins, couleurs, c):
 
 
 ```python
-coloriage(G_EX)
+coloriage(G^eX)
 ```
 
 
